@@ -1,7 +1,7 @@
 #wrapper{
    border:10px;
    border-color:black;
-   width:1000px;
+   width:200px;
    background-color:red;
    float:left;
 }
@@ -10,7 +10,8 @@
 header{
    border:1px;
    border-color:blue;
-   width:99%;
+   width:100px;
+   height:100px;
 }
 
 div{
