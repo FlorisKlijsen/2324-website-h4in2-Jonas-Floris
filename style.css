@@ -1,7 +1,9 @@
-wrapper{
-   border:1px;
+#wrapper{
+   border:10px;
    border-color:black;
    width:1000px;
+   background-color:red;
+   float:left;
 }
 
 
