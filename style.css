@@ -22,14 +22,20 @@ header div{
    margin-left:calc(17.5% / 7);
    margin-right:calc(17.5% / 7);
    float:left;
-   height:10px;
+   height:30%;
    width:15%;
-   background-color: #4FF392;
+   background-color: #f0fce3;
    margin-top:5%;
+   font-family:Times New Roman;
+   font-weight:bolder;
+   font-size:175%;
+   text-align:center;
+   font-style:italic;
+   color:#000000;
 
 }
 
 .klok{
    float:right;
-   margin-top:-4%;
+   margin-top:-7%;
 }
