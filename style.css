@@ -25,9 +25,11 @@ header div{
    height:10px;
    width:15%;
    background-color: #4FF392;
-   vertical-align:bottom;
+   margin-top:5%;
+
 }
 
 .klok{
    float:right;
+   margin-top:-4%;
 }
