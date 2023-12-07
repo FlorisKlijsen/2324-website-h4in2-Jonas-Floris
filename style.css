@@ -1,20 +1,33 @@
+
 #wrapper{
-   border:10px;
-   border-color:black;
-   width:200px;
-   background-color:red;
+   width:96%;
+   height:800px;
+   background-color:#dddddd;
    float:left;
+   margin:2%;
 }
 
 
 header{
-   border:1px;
-   border-color:blue;
-   width:100px;
-   height:100px;
+   background-color:blueviolet;
+   width:94%;
+   height:15%;
+   float:left;
+   margin:2%;
+   background-image: url("/images/cubic.jpg");
+
 }
 
-div{
-   border:1px;
-   border-color:red;
+header div{
+   margin-left:calc(17.5% / 7);
+   margin-right:calc(17.5% / 7);
+   float:left;
+   height:10px;
+   width:15%;
+   background-color: #4FF392;
+   vertical-align:bottom;
+}
+
+.klok{
+   float:right;
 }
