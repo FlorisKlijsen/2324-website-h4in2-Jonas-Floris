@@ -25,24 +25,26 @@ header{
    height:20%;
    width:15%;
    background-color: #f0fce3;
-   margin-top:6%;
-   font-family:Times New Roman;
+   margin-top:8.5%;
+   font-family:"Times New Roman";
    font-weight:bolder;
    font-size:175%;
    text-align:center;
    font-style:italic;
    color:#000000;
+   text-decoration:none;
 
 }
 
 .home:hover, .veiligheid:hover, .galerij:hover, .videos:hover, .externe_links:hover{
    background-color:#e0e0d0;
+   cursor:default;
 }
 
 
 .klok{
    float:right;
-   margin-top:-6.5%;
+   margin-top:-10%;
    margin-right:calc(17.5% / 7);
 }
 
@@ -54,13 +56,43 @@ header{
  .dropdown-content {
    display: none;
    position: absolute;
-   background-color: #d0d0c0;
-   width: 75%;
-   padding: 6px 16px;
+   background-color: #c0c0b0;
+   width: 90%;
+   padding: 1% 1% 3% 4%;
    z-index: 1;
-   margin-top:0.5%;
+   margin-top:-0.5%;
+   text-align:left;
+   font-size:90%;
+ }
+
+ .dropdown-content a {
+   text-decoration: none;
+   color:#000000;
  }
  
- .dropdown:hover .dropdown-content {
+   .dropdown:hover .dropdown-content {
    display: block;
+ }
+
+ .hover-underline-animation {
+   display: inline-block;
+   position: relative;
+ }
+ 
+ .hover-underline-animation::after {
+   content: '';
+   position: absolute;
+   width: 100%;
+   transform: scaleX(0);
+   height: 2px;
+   bottom: 0;
+   left: 0;
+   background-color: #000000;
+   transform-origin: bottom left;
+   transition: transform 0.25s ease-out;
+ }
+ 
+ .hover-underline-animation:hover::after {
+   transform: scaleX(1);
+   transform-origin: bottom left;
  }
