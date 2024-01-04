@@ -1,7 +1,7 @@
 
 #wrapper{
-   width:102%;
-   height:600px;
+   width:101.6%;
+   height:121px;
    background-color:#dddddd;
    float:left;
    margin:-1% 0% 0% -1%;
@@ -11,7 +11,7 @@
 header{
    background-color:black;
    width:100%;
-   height:20%;
+   height:100%;
    float:left;
    margin:0%;
    /*background-image: url("/images/cubic.jpg");*/
@@ -174,4 +174,34 @@ h1{
 .bodyimage{
   width:40%;
   height:auto;
+}
+
+footer{
+  width:101.6%;
+  height:20%;
+  background-color:black;
+  margin:10% 0% 0% -1%;
+  float:left;
+}
+
+.footerleft{
+  float:left;
+  height: 100%;
+  width: 40%;
+  background-color:transparent;
+  padding:0% 0% 0% 3%;
+}
+
+.footerleft a, .footerleft p, .footerright a, .footerright p {
+  color:white;
+  text-decoration: none;
+}
+
+.footerright{
+  float:right;
+  height:100%;
+  width:40%;
+  background-color:transparent;
+  padding:0% 3% 0% 0%;
+  text-align:right;
 }
