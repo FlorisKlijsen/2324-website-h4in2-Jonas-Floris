@@ -21,8 +21,8 @@ header{
 h1{
   color:#ffffff;
   float:left;
-  font-size:600%;
-  margin:0.5% 0% 0% 5%;
+  font-size:400%;
+  margin:2% 0% 0% 3%;
   font-family:'Times New Roman', Times, serif;
 }
 
@@ -32,7 +32,7 @@ h1{
    float:right;
    height:40%;
    width:13%;
-   background-color: black;
+   background-color: transparent;
    margin-top:5.25%;
    font-family:"Times New Roman";
    font-weight:bolder;
@@ -68,16 +68,17 @@ h1{
    z-index: 1;
    text-align:left;
    font-size:90%;
+   padding-top: 2%;
  }
 
  .home .dropdown-content{
-  width: 50%;
+  width: 75%;
   margin: 9% 0% 0% 22%;
  }
 
  .veiligheid .dropdown-content{
-  width:85%;
-  margin: 9% 0% 0% 5%;
+  width:175%;
+  margin: 9% 0% 0% 10%;
  }
 
  .galerij .dropdown-content{
@@ -95,7 +96,7 @@ h1{
   margin: 9% 0% 0% 10%;
  }
 
-.triangle{
+.driehoek{
  display: none;
   position: absolute;
   z-index: 1;
@@ -106,7 +107,7 @@ h1{
    color:#000000;
  }
  
-   .dropdown:hover .dropdown-content, .dropdown:hover .triangle {
+   .dropdown:hover .dropdown-content, .dropdown:hover .driehoek {
    display: block;
  }
 
@@ -134,7 +135,7 @@ h1{
  }
 
  
- .triangle {
+ .driehoek {
 	width: 0;
 	height: 0;
 	border-left: 20px solid transparent;
@@ -142,24 +143,24 @@ h1{
 	border-bottom: 20px solid #ffffff;
 }
 
-.home .triangle{
-  margin:0% 0% 0% 28%;
+.home .driehoek{
+  margin:2% 0% 0% 28%;
 }
 
-.veiligheid .triangle{
-  margin:0% 0% 0% 15%;
+.veiligheid .driehoek{
+  margin:2% 0% 0% 15%;
 }
 
-.galerij .triangle{
-  margin:0% 0% 0% 22%;
+.galerij .driehoek{
+  margin:2% 0% 0% 22%;
 }
 
-.videos .triangle{
-  margin:0% 0% 0% 22%;
+.videos .driehoek{
+  margin:2% 0% 0% 22%;
 }
 
-.contact .triangle{
-  margin:0% 0% 0% 20%;
+.contact .driehoek{
+  margin:2% 0% 0% 20%;
 }
 
 .iframeblocker{
@@ -168,4 +169,9 @@ h1{
   height:31%;
   float:right;
   margin: 1% -63% 0% 0%;
+}
+
+.bodyimage{
+  width:40%;
+  height:auto;
 }
