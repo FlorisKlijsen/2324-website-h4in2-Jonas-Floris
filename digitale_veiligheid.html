@@ -5,15 +5,15 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
 	<title>Veiligheden</title>
-	<link href="index.css" rel="stylesheet" type="text/css"/>
+	<link href="digitale_veiligheid.css" rel="stylesheet" type="text/css"/>
 	<link rel="icon" type="image/x-icon" href="images/Web-Security-Shield-PNG.png">
 </head>
 
 <body>
 	<div id="wrapper">
 		<header>
-			<h1>
-				Veilig<i>heden</i>.nl
+			<h1 id="header">
+				Digitale Veiligheid
 			</h1>
 			<div class="dropdown contact">
 				<span>Contact</span>
@@ -45,7 +45,7 @@
 				</div>
 			</div>
 			<div class="dropdown veiligheid">
-				<span>Veiligheid</span>
+				<span>Informatie</span>
 				<div class="driehoek"></div>
 				<div class="dropdown-content">
 					<a class="hover-underline-animation" href="digitale_veiligheid.html">Digitale veiligheid</a><br>
@@ -68,9 +68,69 @@
 			<div class="iframeblocker"></div>
 		</header>
 	</div>
-		<div class="image"></div>
-			<img class="bodyimage" src="images/cubic.jpg">
-		<div class="article"></div>
+
+	<div class="navigatiebalk">
+	</div>
+	
+	<div class="dig_veil_tekst">
+		<h2>Cybersecurity</h2>
+			<p>Omdat steeds meer dingen digitaal worden is het belangrijk om goede cybersecurity te hebben. Dit is omdat hackers veel geld kunnen verdienen door je gegevens te stelen. Om dit tegen te gaan moet cybersecurity aan de volgende eisen voldoen.</p>
+		<h3>Vertrouwelijkheid</h3>
+			<p>De eerste vereiste is vertrouwelijkheid. Dit bestaat uit twee delen:<br> 
+				<ol type="1">
+					<li>
+						<b>Authenticatie</b>: Drie mogelijkheden. Het is iets wat je:
+						<ol type="a">
+							<li>Hebt: een pasje of een sleutel</li>
+							<li>Weet: een code of je eerste huisdier</li>
+							<li>Bent: irisscan of stemherkenning</li>
+						</ol>
+						Hiermee geef je aan welke persoon je bent.
+					</li>
+					<li><b>Verificatie</b>: hiermee wordt gecheckt of je die persoon ook echt bent. Dit kan afhankelijk van de situatie veel vormen aannemen.</li>
+				</ol>
+				Er is ook nog een extra maatregel om jezelf beter te beveiligen: <b>twee-factor authenticatie</b>. Hierbij moet de gebruiker twee vormen van authenticatie combineren, waardoor de kans kleiner wordt dat iemand anders zich als jou kan voordoen.<br><br>
+				Een verwant principe is <b>screening</b>, waarbij mensen en/of voertuigen worden geïdentificeerd. Als ze op een zogenaamde <b>blacklist</b> staan, worden de autoriteiten gewaarschuwd. Screening wordt het breedst toegepast in China.<br><br>
+				Als je eenmaal in een systeem zit, moet bepaald worden welke <b>rechten</b> je daarbinnen hebt, afhankelijk van je <b>rol</b>. Dit heet <b>autorisatie</b>. Met andere woorden, je controleert de integriteit. Dit komt op allerlei plaatsen voor, bijvoorbeeld op computers om bestandsmachtigingen op verschillende accounts te differentiëren.
+				Bij informatie is er ook sprake van integriteit. Om te kunnen spreken van integriteit bij informatie moet voldaan worden aan de volgende kenmerken:<br><br>
+				<table>
+					<tr>
+						<th><b>kenmerk</b></th>
+						<th><b>toelichting</b></th>
+					</tr>
+					<tr>
+						<th>Volledigheid</th>
+						<th>Is de informatie volledig?</th>
+					</tr>
+					<tr>
+						<th>Relevantie</th>
+						<th>Is de informatie toepasselijk voor het doel?</th>
+					</tr>
+					<tr>
+						<th>Betrouwbaarheid</th>
+						<th>Is de informatie betrouwbaar? (Goede bronnen?)</th>
+					</tr>
+					<tr>
+						<th>Overzichtelijkheid</th>
+						<th>Is de informatie overzichtelijk weergegeven?</th>
+					</tr>
+					<tr>
+						<th>Beschikbaarheid</th>
+						<th>Is de informatie beschikbaar wanneer het nodig is?</th>
+					</tr>
+					<tr>
+						<th>Doelgerichtheid</th>
+						<th>Is de informatie gericht op degene die het moet bereiken?</th>
+					</tr>
+				</table><br>
+				Voldoen aan deze eisen is voor informatie belangrijk om bruikbaar te zijn. Om te controleren of het bestand dat je in handen hebt het origineel is, kan je een <b>checksum</b> genereren en die vergelijken met degene die de ontwikkelaar heeft gegenereerd. Zodra er iets anders is, wordt de gehele checksum anders.<br><br>
+				Een vergelijkbare techniek wordt gebruikt voor IBAN-nummers. Als je er een typefout in maakt, wordt dat opgemerkt en is de code ongeldig.<br><br>
+				Tot slot moet de <b>beschikbaarheid</b> van de informatie goed zijn. Dit betekent dat de informatie niet verloren mag gaan. Een manier om dit te bereiken is het maken van back-ups via het 3-2-1-systeem: hierbij sla je drie kopieën van de informatie op, waarbij er twee methodes van opslag worden gebruikt en er één kopie op een andere locatie is.<br><br>
+				Sommige bestanden die verstuurd moeten worden, moeten niet voor iedereen leesbaar zijn. Hier zorgt <b>encryptie</b> voor. Alleen de ontvanger en de zender hebben de sleutel die het bericht op de servers kan terugvertalen vanuit onleesbare karakters.<br><br>
+				Als je gevoelige data zoals wachtwoorden op wil slaan, moet je gebruikmaken van <b>hashing</b>: dit is een manier om ‘gehashte’ wachtwoorden zó op een server te zetten, dat de hash niet meer terug vertaald kan worden naar het origineel. Om toch te kunnen checken of een gebruiker het wachtwoord goed heeft, wordt de invoer óók gehasht, waarna hij vergeleken wordt met het origineel.<br><br>
+				Om de bereikbaarheid van informatie doelgericht te verslechteren kunnen hackers een <b>DDoS-aanval (Distributed Denial of Service)</b> doen , waarbij je zoveel aanvragen naar een server stuurt dat deze crasht en dus helemaal niet meer reageert. Als dit gebeurt bij een website gaat de website offline. In meer ernstige gevallen zou je het openbaar vervoer ermee kunnen ontregelen.
+			</p>
+	</div>
 </body>
 
 <footer>

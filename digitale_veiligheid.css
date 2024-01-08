@@ -4,7 +4,7 @@
   height:121px;
   background-color:#dddddd;
   float:left;
-  margin:-1% 0% 0% -1%;
+  margin:-3% 0% 0% -1%;
 }
 
 
@@ -18,11 +18,11 @@ header{
 
 }
 
-h1{
+header h1{
  color:#ffffff;
  float:left;
- font-size:400%;
- margin:2% 0% 0% 3%;
+ font-size:300%;
+ margin:3% 0% 0% 4%;
  font-family:'Times New Roman', Times, serif;
 }
 
@@ -69,6 +69,7 @@ h1{
   text-align:left;
   font-size:90%;
   padding-top: 2%;
+  box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0) , 0 4px 8px 0 rgba(0, 0, 0, 0.2) , 0 4px 8px 0 rgba(0, 0, 0, 0.2) , 0 4px 8px 0 rgba(0, 0, 0, 0.2) ;
 }
 
 .home .dropdown-content{
@@ -171,14 +172,19 @@ display: none;
  margin: 1% -63% 0% 0%;
 }
 
-.bodyimage{
- width:40%;
+.bodyimage, .bodyimage2{
+ width:100%;
  height:auto;
 }
 
+.bodyimage2{
+ margin-top:-1%;
+}
+
+
 footer{
  width:101.6%;
- height:20%;
+ height:10%;
  background-color:black;
  margin:10% 0% 0% -1%;
  float:left;
@@ -204,4 +210,51 @@ footer{
  background-color:transparent;
  padding:0% 3% 0% 0%;
  text-align:right;
+}
+
+body{
+ /*background-image: linear-gradient( 180deg, #ffffff 40%, #000000 41%, #000000 80%, #ffffff 81% );*/
+ background-image: url(/images/cubic.jpg);
+ height:1000px;
+ width:98.8%;
+ background-size:cover;
+}
+
+.dig_veil_tekst{
+  width:70%;
+  height:115%;
+  float:right;
+  color:#ffffff;
+  background-color:#000000;
+  padding:3%;
+  border-radius:4%;
+  overflow:scroll;
+}
+
+.dig_veil_h1{
+  color:#ffffff;
+  font-size:300%;
+  text-align:center;
+}
+
+.navigatiebalk{
+  background-color:purple;
+  height:50%;
+  width:20%;
+  float:left;
+  border-radius:15%;
+  margin:2% 2% 60% 1%;
+  position:fixed;
+  top:28%;
+}
+
+table,tr,th{
+  border:1px solid white;
+  border-collapse:collapse;
+  font-weight:normal;
+  background-color:#222222;
+}
+
+h2,h3{
+  margin-bottom:-1%
 }
