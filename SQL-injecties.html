@@ -84,12 +84,20 @@
 	<div class="dig_veil_tekst">
 		<p>
 			<h1 class="dig_veil_h1">SQL-injecties</h1>
-			<h2>Cybersecurity</h2>
-			Omdat steeds meer dingen digitaal worden is het belangrijk om goede cybersecurity te hebben. Dit is omdat hackers veel geld kunnen verdienen door je gegevens te stelen. Om dit tegen te gaan moet cybersecurity aan de volgende eisen voldoen.
-			<h3 id="vertrouwelijkheid">Vertrouwelijkheid</h3>
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec varius fringilla justo in posuere. Aenean posuere felis sed odio tincidunt, sed rhoncus nulla vehicula. Ut aliquam egestas volutpat. Mauris pharetra id nulla sed mattis. Curabitur et magna pellentesque, ultrices felis at, auctor diam. Nulla urna sapien, maximus vel fermentum vel, iaculis non tortor. Nulla fringilla elit mi, et volutpat tellus mollis eu. Suspendisse accumsan felis a mi efficitur facilisis. Vestibulum quis mattis quam. Nam vehicula egestas justo. Fusce interdum id nisl quis malesuada. Sed ac convallis ante. Fusce erat sem, consequat in blandit a, ornare sit amet mi. Cras sollicitudin accumsan velit eu feugiat. Nam nulla eros, ultrices ac rutrum laoreet, fringilla volutpat arcu.
+			<h2>SQL-injecties</h2>
+				<p>In PHP kan je SQL gebruiken om data weer te geven uit een database. Door de URL aan te passen kan een hacker code toevoegen, ofwel injecteren, waarmee hij de output van data kan aanpassen.</p>
 
-			Sed gravida quam ultricies, tempus elit quis, malesuada metus. Integer tempor mollis diam. Nulla vehicula nibh vitae imperdiet finibus. Morbi eget urna vitae neque sagittis vulputate. Suspendisse potenti. Nullam et vestibulum orci. Pellentesque gravida ultrices neque, vitae dapibus erat laoreet nec.
+				<p>Door slim misbruik te maken van de syntax van iemands database kan je jezelf toegang geven tot gegevens, of jezelf zelfs zomaar inloggen op een account! Hiernaast kan je ook de query zó aanpassen, dat je erachter kan komen hoe de database is opgebouwd. Je stuurt dan bijvoorbeeld steeds een verzoek met een naam van een rij en kijkt of er een error terugkomt. Als dat niet zo is, bestaat de rij dus!</p>
+
+				<p>Naast het bekijken van gegevens, kan je ze ook veranderen. Door middel van een injectie kan je een gebruiker toevoegen en wacht of andere gegevens aanpassen. Ook hiermee kan je jezelf toegang verschaffen tot privédata.</p>
+
+				<p>Om jezelf hiertegen te beveiligen kun je als websiteigenaar een aantal dingen doen:</p>
+ 				<ul>
+				<li>Je kan placeholders instellen zodat een query op een speciale manier moet worden ingevoerd.</li>
+ 				<li>Je kan PHP-filters maken, die specifieke soorten invoer verwijderen uit databases.</li>
+				<li>Je kan foutmeldingen aanpassen, zodat ze minder informatie geven over de structuur ervan.</li>
+				</ul>
+
 		</p>
 	</div>
 </body>
