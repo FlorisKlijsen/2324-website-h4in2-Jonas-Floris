@@ -85,9 +85,9 @@
 		<p>
 			<h1 class="dig_veil_h1">Bedreigingen</h1>
 			<h2>Zwakheden in de architectuur</h2>
-<p>Bij het ontwerpen van een architectuur wil een programmeur zwakheden voorkomen: onbedoelde fouten in of tussen de lagen
-waar iemand anders misbruik van kan maken. Als een kwaadwillend iemand zo’n zwakheid vindt, is er sprake van een lek.
-Een voorbeeld van zo’n zwakheid is te vinden bij SQL-injecties: als je bij deze vraagtaal het verzoek dat je naar de
+<p>Bij het ontwerpen van een architectuur wil een programmeur <b>zwakheden</b> voorkomen: onbedoelde fouten in of tussen de lagen
+waar iemand anders misbruik van kan maken. Als een kwaadwillend iemand zo’n zwakheid vindt, is er sprake van een <b>lek</b>.
+Een voorbeeld van zo’n zwakheid is te vinden bij <b>SQL-injecties</b>: als je bij deze vraagtaal het verzoek dat je naar de
 server stuurt kan aanpassen, kan je toegang krijgen tot gegevens die je niet zou moeten kunnen zien, of kan je de
 gegevens zelfs aanpassen.</p>
 
@@ -95,23 +95,23 @@ gegevens zelfs aanpassen.</p>
 <p>Zwakheden kunnen, naast in een apparaat, ook in de communicatie ertussen zitten. Als jij immers gevoelige informatie
 opstuurt naar een website, mag die informatie niet te lezen zijn door een hacker!</p>
 
-<p>Een manier om zwakheden in de communicatie te misbruiken is een man-in-the-middle aanval. Hierbij kan een hacker (onder
+<p>Een manier om zwakheden in de communicatie te misbruiken is een <b>man-in-the-middle aanval</b>. Hierbij kan een hacker (onder
 andere) door een openbaar wifi-netwerk te maken waar mensen mee verbinden, alle data die er tussen servers en gebruikers
 verstuurd wordt meelezen.</p>
 
-<p>Er is inmiddels ook een manier om je (grotendeels) te beveiligen tegen dit soort bedreigingen: de meeste websites maken
-tegenwoordig gebruik van het HTTPS-protocol, waarvan de S staat voor ‘secure’. Om HTTPS te kunnen gebruiken, moet een
-website een SSL-certificaat hebben. Dit krijgen ze door zich te verifiëren bij een centrale instantie. Cliënten hoeven
+<p>Er is vandaag de dag ook een manier om je (grotendeels) te beveiligen tegen dit soort bedreigingen: de meeste websites maken
+tegenwoordig gebruik van het <b>HTTPS-protocol</b>, waarvan de S staat voor ‘secure’. Om HTTPS te kunnen gebruiken, moet een
+website een <b>SSL-certificaat</b> hebben. Dit krijgen ze door zich te verifiëren bij een centrale instantie. Cliënten hoeven
 geen certificaat te hebben.</p>
 
-<p>Het verschil tussen HTTPS en end-to-end encryptie is dat de server bij HTTPS de onversleutelde boodschap heeft, en bij
+<p>Het verschil tussen HTTPS en <b>end-to-end encryptie</b> is dat de server bij HTTPS de onversleutelde boodschap heeft, en bij
 end-to-end encryptie niet. Dit zorgt ervoor dat zelfs als een hacker inbreekt op de server, hij er nog steeds niets mee
 kan.</p>
 
 <h2>Zwakheden bij de gebruiker</h2>
 <p>Afgezien van de zwakheden bij de computer, zijn mensen vaak nog wel de zwakste schakel in beveiliging. Hoe goed een
 boodschap immers ook versleuteld is, is het toch makkelijk in te breken in een account als het wachtwoord heel simpel
-is. Vaak worden wachtwoorden geraden via brute force: gewoon wachtwoorden blijven proberen totdat je de goede vindt.
+is. Vaak worden wachtwoorden geraden via <b>brute force</b>: gewoon wachtwoorden blijven proberen totdat je de goede vindt.
 Websites proberen dit te voorkomen door het aantal pogingen dat je krijgt te limiteren, maar vaak is dit te omzeilen
 door gebruik te maken van andere zwakheden.</p>
 
@@ -123,13 +123,16 @@ moeilijker om te onthouden.</p>
 
 <h2>Technieken</h2>
 <p>Er zijn veel technieken om gevoelige informatie van mensen te krijgen. Drie van deze technieken zijn:<p>
-Social engineering: bij deze techniek wordt geen code gebruikt; er wordt enkel ingespeeld op het feit dat mensen
+
+<ol>
+<li><b>Social engineering</b>: bij deze techniek wordt geen code gebruikt; er wordt enkel ingespeeld op het feit dat mensen
 makkelijk voor de gek te houden zijn: vaak doen aanvallers zich als iemand anders voor tijdens een telefoongesprek,
-waarna ze informatie verzamelen die ze later kunnen gebruiken.
-Phishing: deze techniek wordt samen met social engineering gebruikt. Bij phishing krijg je een bericht of telefoontje
+waarna ze informatie verzamelen die ze later kunnen gebruiken.</li>
+<li><b>Phishing</b>: deze techniek wordt samen met social engineering gebruikt. Bij phishing krijg je een bericht of telefoontje
 waarbij je naar een externe site gestuurd wordt. Deze lijkt op de officiële site, maar is eigenlijk een kopie. Als je
-hier je gegevens invult, krijgt de maker van de nepsite je gegevens toegestuurd.
-Malware: zie kopje ‘malware’
+hier je gegevens invult, krijgt de maker van de nepsite je gegevens toegestuurd.</li>
+<li><b>Malware</b>: zie kopje ‘malware’.</li>
+</ol>
 
 <h2>Malware</h2>
 Malware is onder te verdelen in meerdere categorieën:
@@ -144,7 +147,7 @@ Malware is onder te verdelen in meerdere categorieën:
 					<th>Zelfstanding programma?</th>
 				</tr>
 				<tr>
-					<td> Trojan (Horse)</td>
+					<td><b>Trojan (Horse)</b>/td>
 					<td>Nee</td>
 					<td>Soms</td>
 					<td>Ja</td>
@@ -152,7 +155,7 @@ Malware is onder te verdelen in meerdere categorieën:
 					<td>Ja</td>
 				</tr>
 				<tr>
-					<td>Worm</td>
+					<td><b>Worm</b></td>
 					<td>Ja</td>
 					<td>Soms</td>
 					<td>Ja</td>
@@ -160,7 +163,7 @@ Malware is onder te verdelen in meerdere categorieën:
 					<td>Ja</td>
 				</tr>
 				<tr>
-					<td>Virus</td>
+					<td><b>Virus</b></td>
 					<td>Nee</td>
 					<td>Soms</td>
 					<td>Ja</td>
@@ -168,7 +171,7 @@ Malware is onder te verdelen in meerdere categorieën:
 					<td>Nee</td>
 				</tr>
 				<tr>
-					<td>Spyware</td>
+					<td><b>Spyware</b></td>
 					<td>Nee</td>
 					<td>Ja</td>
 					<td>Ja</td>
@@ -176,7 +179,7 @@ Malware is onder te verdelen in meerdere categorieën:
 					<td>Ja</td>
 				</tr>
 				<tr>
-					<td>Adware</td>
+					<td><b>Adware</b></td>
 					<td>Nee</td>
 					<td>Ja (maar trager)</td>
 					<td>Nee</td>
@@ -184,13 +187,14 @@ Malware is onder te verdelen in meerdere categorieën:
 					<td>Ja</td>
 				</tr>
 				<tr>
-					<td>Ransomware</td>
+					<td><b>Ransomware</b></td>
 					<td>Nee</td>
 					<td>Nee</td>
 					<td>Ja</td>
 					<td>Verstopt<br>in online download</td>
 					<td>Ja</td>
 				</tr>
+
 		</table>
 	</div>
 </body>
