@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
 	<title>Veiligheden</title>
-	<link href="digitale_veiligheid.css" rel="stylesheet" type="text/css"/>
+	<link href="maatregelen.css" rel="stylesheet" type="text/css"/>
 	<link rel="icon" type="image/x-icon" href="images/Web-Security-Shield-PNG.png">
 </head>
 
@@ -72,11 +72,14 @@
 	<div class="navigatiebalk">
 		<h3>Navigatiebalk</h3>
 		<ul type="square">
-			<li>Cybersecurity
+			<li>Maatregelen
 				<ul type="square">
-					<li><a class="hover-underline-animation" href="#vertrouwelijkheid">Vertrouwelijkheid</a></li>
-					<li><a class="hover-underline-animation" href="#integriteit">Integriteit</a></li>
-					<li><a class="hover-underline-animation" href="#beschikbaarheid">Beschikbaarheid</a></li>
+					<li><a class="hover-underline-animation" href="#preventie">Preventie</a></li>
+					<li><a class="hover-underline-animation" href="#detectie">Detectie</a></li>
+					<li><a class="hover-underline-animation" href="#repressie_en_correctie">Repressie en Correctie</a></li>
+					<li><a class="hover-underline-animation" href="#symmetrische_encryptie">Symmetrische Encryptie</a></li>
+					<li><a class="hover-underline-animation" href="#asymmetrische_encryptie">Asymmetrische Encryptie</a></li>
+					<li><a class="hover-underline-animation" href="#zelf_doen">Zelf Doen</a></li>
 				</ul>
 			</li>
 		</ul>
@@ -84,56 +87,50 @@
 	<div class="dig_veil_tekst">
 		<p>
 			<h1 class="dig_veil_h1">Maatregelen</h1>
-			<h2>Preventie</h2>
-			<p>Softwareontwikkelaars kunnen wel maatregelen nemen om het aantal lekken te beperken. Deze maatregelen zijn:</p>
-			<ul>
-			<li><b>Sandboxing</b>: bij sandboxing wordt een app gelimiteerd tot zijn aangewezen ‘zandbak’, waarbuiten hij zonder expliciete toestemming niets kan. Een virus kan dan dus ook geen schade doen aan je systeem.</li>
-			<li><b>Encryptie</b>: encryptie is een goede manier om datalekken te voorkomen of in ieder geval minder ernstig te maken. Als je namelijk zo veel mogelijk data versleutelt, kan een hacker er waarschijnlijk minder mee als hij toegang weet te krijgen tot gevoelige data.</li>
-			<li><b>Backups</b>: het back-uppen van data is belangrijk om schade te beperken, mocht er een aanval plaatsvinden.</li>
-			</ul>
-			<p>Het nemen van dergelijke maatregelen is verplicht voor bedrijven die met persoonsgegevens omgaan.</p>
-
-			<h2>Detectie</h2>
-			<p>Software is ondanks deze maatregelen eigenlijk nooit perfect. Daarom is het ook nodig om te controleren of er misbruik is van lekken. Dat kan op de volgende manieren:</p> 
-			<ul>
-			<li><b>Firewall</b>: een firewall monitort alle data die een netwerk binnenkomt, en blokkeert zo nodig hackers, malware, of spam.</li>
-			<li><b>IDS (Intrusion Detection System)</b>: vergelijkbaar met de firewall scant een IDS de netwerkprocessen op ongebruikelijkheden die kunnen wijzen op een aanval.</li>
-			<li><b>Antivirussoftware</b>: dergelijke software scant een systeem op bekende malware en verwijdert deze.</li>
-			</ul>
-
-			<h2>Repressie en correctie</h2>
-			Als er sprake is van een aanval, moet er iets aan worden gedaan (<b>repressie</b>). Als er al schade is aangericht moet die ook worden hersteld (<b>correctie</b>).
-
-			<h2>Symmetrische encryptie</h2>
-			Bij encryptie is er sprake van een <b>algoritme</b>, datgene dat de tekst aanpast, en een <b>sleutel</b>, iets dat  je nodig hebt om de data weer leesbaar te kunnen maken. Als een algoritme maar één sleutel gebruikt, is er sprake van symmetrische encryptie.
-
-			<h2>Asymmetrische encryptie</h2>
-			<p>Bij asymmetrische informatie is er meer dan één sleutel. Het werkt zo:</p>
-			<ol>
-			<li>Wanneer je iemand anders een bericht stuurt, ontvang je hun openbare sleutel. Hiermee versleutel je het bestand.</li>
-			<li>De ander ontvangt het bestand. Het is dan versleuteld.</li>
-			<li>Om het te ontsleutelen gebruikt de ander zijn privésleutel. Deze sleutel is de enige die het bericht kan ontsleutelen.</li>
-			</ol>
-
-			<h2>Zelf doen</h2>
-			<p>Je kan veel dingen doen om jezelf te beschermen:</p>
-			<ul>
-			<li>Installeer updates als ze beschikbaar zijn. Hiermee voorkom je dat hackers misbruik van fouten in je systeem kunnen maken.</li>
-			<li>Vertrouw links op het internet niet blind.</li>
-			<li>Zorg ervoor dat je data geback-upt is.</li>
-			<li>Let erop of een website een beveiligd protocol gebruikt.</li>
-			<li>Installeer alleen apps die je vertrouwt.</li>
-			<li>Zorg ervoor dat je apparaten met een wachtwoord, patroon, vingerafdruk of gezichtsherkenning beveiligd zijn. Anders kan iemand zo bij je data.</li>
-			<li>Kies je wachtwoorden slim (moeilijk te raden), en voor elke website een andere. Vervang ze ook één keer per jaar.</li>
-			</ul>
-
-			<p>Aanvullend kan je ook nog de volgende dingen doen:</p>
-			<ul>
-			<li>Druk niet zomaar ‘ja’ als een app om toestemming tot je gegevens vraagt.</li>
-			<li>Versleutel gegevens op een externe harde schijf.</li>
-			<li>Verbind niet zomaar zelf geprogrammeerde computers met het internet.</li>
-			<li>Installeer eventueel extra software om malware tegen te gaan.</li>
-			</ul>
+			<h2 id="preventie">Preventie</h2>
+				Softwareontwikkelaars kunnen wel maatregelen nemen om het aantal lekken te beperken. Deze maatregelen zijn:
+				<ul>
+					<li><b>Sandboxing</b>: bij sandboxing wordt een app gelimiteerd tot zijn aangewezen ‘zandbak’, waarbuiten hij zonder expliciete toestemming niets kan. Een virus kan dan dus ook geen schade doen aan je systeem.</li>
+					<li><b>Encryptie</b>: encryptie is een goede manier om datalekken te voorkomen of in ieder geval minder ernstig te maken. Als je namelijk zo veel mogelijk data versleutelt, kan een hacker er waarschijnlijk minder mee als hij toegang weet te krijgen tot gevoelige data.</li>
+					<li><b>Backups</b>: het back-uppen van data is belangrijk om schade te beperken, mocht er een aanval plaatsvinden.</li>
+				</ul>
+				Het nemen van dergelijke maatregelen is verplicht voor bedrijven die met persoonsgegevens omgaan.
+			<h2 id="detectie">Detectie</h2>
+				Software is ondanks deze maatregelen eigenlijk nooit perfect. Daarom is het ook nodig om te controleren of er misbruik is van lekken. Dat kan op de volgende manieren:
+				<ul>
+					<li><b>Firewall</b>: een firewall monitort alle data die een netwerk binnenkomt, en blokkeert zo nodig hackers, malware, of spam.</li>
+					<li><b>IDS (Intrusion Detection System)</b>: vergelijkbaar met de firewall scant een IDS de netwerkprocessen op ongebruikelijkheden die kunnen wijzen op een aanval.</li>
+					<li><b>Antivirussoftware</b>: dergelijke software scant een systeem op bekende malware en verwijdert deze.</li>
+				</ul>
+			<h2 id="repressie_en_correctie">Repressie en correctie</h2>
+				Als er sprake is van een aanval, moet er iets aan worden gedaan (<b>repressie</b>). Als er al schade is aangericht moet die ook worden hersteld (<b>correctie</b>).
+			<h2 id="symmetrische_encryptie">Symmetrische encryptie</h2>
+				Bij encryptie is er sprake van een <b>algoritme</b>, datgene dat de tekst aanpast, en een <b>sleutel</b>, iets dat  je nodig hebt om de data weer leesbaar te kunnen maken. Als een algoritme maar één sleutel gebruikt, is er sprake van symmetrische encryptie.
+			<h2 id="asymmetrische_encryptie">Asymmetrische encryptie</h2>
+				Bij asymmetrische informatie is er meer dan één sleutel. Het werkt zo:
+				<ol>
+					<li>Wanneer je iemand anders een bericht stuurt, ontvang je hun openbare sleutel. Hiermee versleutel je het bestand.</li>
+					<li>De ander ontvangt het bestand. Het is dan versleuteld.</li>
+					<li>Om het te ontsleutelen gebruikt de ander zijn privésleutel. Deze sleutel is de enige die het bericht kan ontsleutelen.</li>
+				</ol>
+			<h2 id="zelf_doen">Zelf doen</h2>
+				Je kan veel dingen doen om jezelf te beschermen:
+				<ul>
+					<li>Installeer updates als ze beschikbaar zijn. Hiermee voorkom je dat hackers misbruik van fouten in je systeem kunnen maken.</li>
+					<li>Vertrouw links op het internet niet blind.</li>
+					<li>Zorg ervoor dat je data geback-upt is.</li>
+					<li>Let erop of een website een beveiligd protocol gebruikt.</li>
+					<li>Installeer alleen apps die je vertrouwt.</li>
+					<li>Zorg ervoor dat je apparaten met een wachtwoord, patroon, vingerafdruk of gezichtsherkenning beveiligd zijn. Anders kan iemand zo bij je data.</li>
+					<li>Kies je wachtwoorden slim (moeilijk te raden), en voor elke website een andere. Vervang ze ook één keer per jaar.</li>
+				</ul>
+				Aanvullend kan je ook nog de volgende dingen doen:
+				<ul>
+					<li>Druk niet zomaar ‘ja’ als een app om toestemming tot je gegevens vraagt.</li>
+					<li>Versleutel gegevens op een externe harde schijf.</li>
+					<li>Verbind niet zomaar zelf geprogrammeerde computers met het internet.</li>
+					<li>Installeer eventueel extra software om malware tegen te gaan.</li>
+				</ul>
 		</p>
 	</div>
 </body>

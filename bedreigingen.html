@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
 	<title>Veiligheden</title>
-	<link href="digitale_veiligheid.css" rel="stylesheet" type="text/css"/>
+	<link href="bedreigingen.css" rel="stylesheet" type="text/css"/>
 	<link rel="icon" type="image/x-icon" href="images/Web-Security-Shield-PNG.png">
 </head>
 
@@ -72,11 +72,13 @@
 	<div class="navigatiebalk">
 		<h3>Navigatiebalk</h3>
 		<ul type="square">
-			<li>Cybersecurity
+			<li>Bedreigingen
 				<ul type="square">
-					<li><a class="hover-underline-animation" href="#vertrouwelijkheid">Vertrouwelijkheid</a></li>
-					<li><a class="hover-underline-animation" href="#integriteit">Integriteit</a></li>
-					<li><a class="hover-underline-animation" href="#beschikbaarheid">Beschikbaarheid</a></li>
+					<li><a class="hover-underline-animation" href="#zwakheden_in_de_architectuur">Zwakheden in de architectuur</a></li>
+					<li><a class="hover-underline-animation" href="#zwakheden_in_de_communicatie">Zwakheden in de communicatie</a></li>
+					<li><a class="hover-underline-animation" href="#zwakheden_bij_de_gebruiker">Zwakheden bij de gebruiker</a></li>
+					<li><a class="hover-underline-animation" href="#technieken">Technieken</a></li>
+					<li><a class="hover-underline-animation" href="#malware">Malware</a></li>
 				</ul>
 			</li>
 		</ul>
@@ -84,58 +86,48 @@
 	<div class="dig_veil_tekst">
 		<p>
 			<h1 class="dig_veil_h1">Bedreigingen</h1>
-			<h2>Zwakheden in de architectuur</h2>
-<p>Bij het ontwerpen van een architectuur wil een programmeur <b>zwakheden</b> voorkomen: onbedoelde fouten in of tussen de lagen
-waar iemand anders misbruik van kan maken. Als een kwaadwillend iemand zo’n zwakheid vindt, is er sprake van een <b>lek</b>.
-Een voorbeeld van zo’n zwakheid is te vinden bij <b>SQL-injecties</b>: als je bij deze vraagtaal het verzoek dat je naar de
-server stuurt kan aanpassen, kan je toegang krijgen tot gegevens die je niet zou moeten kunnen zien, of kan je de
-gegevens zelfs aanpassen.</p>
-
-<h2>Zwakheden in de communicatie</h2>
-<p>Zwakheden kunnen, naast in een apparaat, ook in de communicatie ertussen zitten. Als jij immers gevoelige informatie
-opstuurt naar een website, mag die informatie niet te lezen zijn door een hacker!</p>
-
-<p>Een manier om zwakheden in de communicatie te misbruiken is een <b>man-in-the-middle aanval</b>. Hierbij kan een hacker (onder
-andere) door een openbaar wifi-netwerk te maken waar mensen mee verbinden, alle data die er tussen servers en gebruikers
-verstuurd wordt meelezen.</p>
-
-<p>Er is vandaag de dag ook een manier om je (grotendeels) te beveiligen tegen dit soort bedreigingen: de meeste websites maken
-tegenwoordig gebruik van het <b>HTTPS-protocol</b>, waarvan de S staat voor ‘secure’. Om HTTPS te kunnen gebruiken, moet een
-website een <b>SSL-certificaat</b> hebben. Dit krijgen ze door zich te verifiëren bij een centrale instantie. Cliënten hoeven
-geen certificaat te hebben.</p>
-
-<p>Het verschil tussen HTTPS en <b>end-to-end encryptie</b> is dat de server bij HTTPS de onversleutelde boodschap heeft, en bij
-end-to-end encryptie niet. Dit zorgt ervoor dat zelfs als een hacker inbreekt op de server, hij er nog steeds niets mee
-kan.</p>
-
-<h2>Zwakheden bij de gebruiker</h2>
-<p>Afgezien van de zwakheden bij de computer, zijn mensen vaak nog wel de zwakste schakel in beveiliging. Hoe goed een
-boodschap immers ook versleuteld is, is het toch makkelijk in te breken in een account als het wachtwoord heel simpel
-is. Vaak worden wachtwoorden geraden via <b>brute force</b>: gewoon wachtwoorden blijven proberen totdat je de goede vindt.
-Websites proberen dit te voorkomen door het aantal pogingen dat je krijgt te limiteren, maar vaak is dit te omzeilen
-door gebruik te maken van andere zwakheden.</p>
-
-<p>Een goede strategie voor het kiezen van moeilijke wachtwoorden is ervoor zorgen dat hij lang is. Anders dan wat mensen
-vaak denken, hoeft een moeilijk te raden wachtwoord geen gebruik te maken van obscene tekens; hierdoor wordt het vooral
-moeilijker om te onthouden.</p>
-
-<p>Als je wachtwoord gekraakt is, kan een hacker daarmee bijvoorbeeld nepmails versturen in jouw naam, of je chanteren.</p>
-
-<h2>Technieken</h2>
-<p>Er zijn veel technieken om gevoelige informatie van mensen te krijgen. Drie van deze technieken zijn:<p>
-
-<ol>
-<li><b>Social engineering</b>: bij deze techniek wordt geen code gebruikt; er wordt enkel ingespeeld op het feit dat mensen
-makkelijk voor de gek te houden zijn: vaak doen aanvallers zich als iemand anders voor tijdens een telefoongesprek,
-waarna ze informatie verzamelen die ze later kunnen gebruiken.</li>
-<li><b>Phishing</b>: deze techniek wordt samen met social engineering gebruikt. Bij phishing krijg je een bericht of telefoontje
-waarbij je naar een externe site gestuurd wordt. Deze lijkt op de officiële site, maar is eigenlijk een kopie. Als je
-hier je gegevens invult, krijgt de maker van de nepsite je gegevens toegestuurd.</li>
-<li><b>Malware</b>: zie kopje ‘malware’.</li>
-</ol>
-
-<h2>Malware</h2>
-Malware is onder te verdelen in meerdere categorieën:
+			<h2 id="zwakheden_in_de_architectuur">Zwakheden in de architectuur</h2>
+				Bij het ontwerpen van een architectuur wil een programmeur <b>zwakheden</b> voorkomen: onbedoelde fouten in of tussen de lagen
+				waar iemand anders misbruik van kan maken. Als een kwaadwillend iemand zo’n zwakheid vindt, is er sprake van een <b>lek</b>.
+				Een voorbeeld van zo’n zwakheid is te vinden bij <b>SQL-injecties</b>: als je bij deze vraagtaal het verzoek dat je naar de
+				server stuurt kan aanpassen, kan je toegang krijgen tot gegevens die je niet zou moeten kunnen zien, of kan je de
+				gegevens zelfs aanpassen.
+			<h2 id="zwakheden_in_de_communicatie">Zwakheden in de communicatie</h2>
+				Zwakheden kunnen, naast in een apparaat, ook in de communicatie ertussen zitten. Als jij immers gevoelige informatie
+				opstuurt naar een website, mag die informatie niet te lezen zijn door een hacker!<br>
+				Een manier om zwakheden in de communicatie te misbruiken is een <b>man-in-the-middle aanval</b>. Hierbij kan een hacker (onder
+				andere) door een openbaar wifi-netwerk te maken waar mensen mee verbinden, alle data die er tussen servers en gebruikers
+				verstuurd wordt meelezen.<br>
+				Er is vandaag de dag ook een manier om je (grotendeels) te beveiligen tegen dit soort bedreigingen: de meeste websites maken
+				tegenwoordig gebruik van het <b>HTTPS-protocol</b>, waarvan de S staat voor ‘secure’. Om HTTPS te kunnen gebruiken, moet een
+				website een <b>SSL-certificaat</b> hebben. Dit krijgen ze door zich te verifiëren bij een centrale instantie. Cliënten hoeven
+				geen certificaat te hebben.<br>
+				Het verschil tussen HTTPS en <b>end-to-end encryptie</b> is dat de server bij HTTPS de onversleutelde boodschap heeft, en bij
+				end-to-end encryptie niet. Dit zorgt ervoor dat zelfs als een hacker inbreekt op de server, hij er nog steeds niets mee
+				kan.		
+			<h2 id="zwakheden_bij_de_gebruiker">Zwakheden bij de gebruiker</h2>
+				Afgezien van de zwakheden bij de computer, zijn mensen vaak nog wel de zwakste schakel in beveiliging. Hoe goed een
+				boodschap immers ook versleuteld is, is het toch makkelijk in te breken in een account als het wachtwoord heel simpel
+				is. Vaak worden wachtwoorden geraden via <b>brute force</b>: gewoon wachtwoorden blijven proberen totdat je de goede vindt.
+				Websites proberen dit te voorkomen door het aantal pogingen dat je krijgt te limiteren, maar vaak is dit te omzeilen
+				door gebruik te maken van andere zwakheden.<br>
+				Een goede strategie voor het kiezen van moeilijke wachtwoorden is ervoor zorgen dat hij lang is. Anders dan wat mensen
+				vaak denken, hoeft een moeilijk te raden wachtwoord geen gebruik te maken van obscene tekens; hierdoor wordt het vooral
+				moeilijker om te onthouden.<br>
+				Als je wachtwoord gekraakt is, kan een hacker daarmee bijvoorbeeld nepmails versturen in jouw naam, of je chanteren.
+			<h2 id="technieken">Technieken</h2>
+				Er zijn veel technieken om gevoelige informatie van mensen te krijgen. Drie van deze technieken zijn:
+				<ol>
+					<li><b>Social engineering</b>: bij deze techniek wordt geen code gebruikt; er wordt enkel ingespeeld op het feit dat mensen
+						makkelijk voor de gek te houden zijn: vaak doen aanvallers zich als iemand anders voor tijdens een telefoongesprek,
+						waarna ze informatie verzamelen die ze later kunnen gebruiken.</li>
+					<li><b>Phishing</b>: deze techniek wordt samen met social engineering gebruikt. Bij phishing krijg je een bericht of telefoontje
+						waarbij je naar een externe site gestuurd wordt. Deze lijkt op de officiële site, maar is eigenlijk een kopie. Als je
+						hier je gegevens invult, krijgt de maker van de nepsite je gegevens toegestuurd.</li>
+					<li><b>Malware</b>: zie kopje ‘malware’.</li>
+				</ol>
+			<h2 id="malware">Malware</h2>
+				Malware is onder te verdelen in meerdere categorieën:
 		</p>
 		<table>
 				<tr>
@@ -147,52 +139,52 @@ Malware is onder te verdelen in meerdere categorieën:
 					<th>Zelfstanding programma?</th>
 				</tr>
 				<tr>
-					<td><b>Trojan (Horse)</b>/td>
-					<td>Nee</td>
-					<td>Soms</td>
-					<td>Ja</td>
-					<td>Verstopt <br>in online download</td>
-					<td>Ja</td>
+					<th><b>Trojan (Horse)</b></th>
+					<th>Nee</th>
+					<th>Soms</th>
+					<th>Ja</th>
+					<th>Verstopt <br>in online download</th>
+					<th>Ja</th>
 				</tr>
 				<tr>
-					<td><b>Worm</b></td>
-					<td>Ja</td>
-					<td>Soms</td>
-					<td>Ja</td>
-					<td>Verspreid via bijv. mail</td>
-					<td>Ja</td>
+					<th><b>Worm</b></th>
+					<th>Ja</th>
+					<th>Soms</th>
+					<th>Ja</th>
+					<th>Verspreid via bijv. mail</th>
+					<th>Ja</th>
 				</tr>
 				<tr>
-					<td><b>Virus</b></td>
-					<td>Nee</td>
-					<td>Soms</td>
-					<td>Ja</td>
-					<td>Verstopt in online download</td>
-					<td>Nee</td>
+					<th><b>Virus</b></th>
+					<th>Nee</th>
+					<th>Soms</th>
+					<th>Ja</th>
+					<th>Verstopt in online download</th>
+					<th>Nee</th>
 				</tr>
 				<tr>
-					<td><b>Spyware</b></td>
-					<td>Nee</td>
-					<td>Ja</td>
-					<td>Ja</td>
-					<td>Verstopt in normaal programma</td>
-					<td>Ja</td>
+					<th><b>Spyware</b></th>
+					<th>Nee</th>
+					<th>Ja</th>
+					<th>Ja</th>
+					<th>Verstopt in normaal programma</th>
+					<th>Ja</th>
 				</tr>
 				<tr>
-					<td><b>Adware</b></td>
-					<td>Nee</td>
-					<td>Ja (maar trager)</td>
-					<td>Nee</td>
-					<td>Downloaden samen met ander programma</td>
-					<td>Ja</td>
+					<th><b>Adware</b></th>
+					<th>Nee</th>
+					<th>Ja (maar trager)</th>
+					<th>Nee</th>
+					<th>Downloaden samen met ander programma</th>
+					<th>Ja</th>
 				</tr>
 				<tr>
-					<td><b>Ransomware</b></td>
-					<td>Nee</td>
-					<td>Nee</td>
-					<td>Ja</td>
-					<td>Verstopt<br>in online download</td>
-					<td>Ja</td>
+					<th><b>Ransomware</b></th>
+					<th>Nee</th>
+					<th>Nee</th>
+					<th>Ja</th>
+					<th>Verstopt<br>in online download</th>
+					<th>Ja</th>
 				</tr>
 
 		</table>

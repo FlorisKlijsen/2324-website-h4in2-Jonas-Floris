@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
 	<title>Veiligheden</title>
-	<link href="digitale_veiligheid.css" rel="stylesheet" type="text/css"/>
+	<link href="SQL-injecties.css" rel="stylesheet" type="text/css"/>
 	<link rel="icon" type="image/x-icon" href="images/Web-Security-Shield-PNG.png">
 </head>
 
@@ -72,11 +72,9 @@
 	<div class="navigatiebalk">
 		<h3>Navigatiebalk</h3>
 		<ul type="square">
-			<li>Cybersecurity
+			<li>SQL-injecties
 				<ul type="square">
-					<li><a class="hover-underline-animation" href="#vertrouwelijkheid">Vertrouwelijkheid</a></li>
-					<li><a class="hover-underline-animation" href="#integriteit">Integriteit</a></li>
-					<li><a class="hover-underline-animation" href="#beschikbaarheid">Beschikbaarheid</a></li>
+					<li><a class="hover-underline-animation" href="#sql-injecties">SQL-injecties</a></li>
 				</ul>
 			</li>
 		</ul>
@@ -84,20 +82,16 @@
 	<div class="dig_veil_tekst">
 		<p>
 			<h1 class="dig_veil_h1">SQL-injecties</h1>
-			<h2>SQL-injecties</h2>
-				<p>In PHP kan je SQL gebruiken om data weer te geven uit een database. Door de URL aan te passen kan een hacker code toevoegen, ofwel injecteren, waarmee hij de output van data kan aanpassen.</p>
-
-				<p>Door slim misbruik te maken van de syntax van iemands database kan je jezelf toegang geven tot gegevens, of jezelf zelfs zomaar inloggen op een account! Hiernaast kan je ook de query zó aanpassen, dat je erachter kan komen hoe de database is opgebouwd. Je stuurt dan bijvoorbeeld steeds een verzoek met een naam van een rij en kijkt of er een error terugkomt. Als dat niet zo is, bestaat de rij dus!</p>
-
-				<p>Naast het bekijken van gegevens, kan je ze ook veranderen. Door middel van een injectie kan je een gebruiker toevoegen en wacht of andere gegevens aanpassen. Ook hiermee kan je jezelf toegang verschaffen tot privédata.</p>
-
-				<p>Om jezelf hiertegen te beveiligen kun je als websiteigenaar een aantal dingen doen:</p>
+			<h2 id="sql-injecties">SQL-injecties</h2>
+				In PHP kan je SQL gebruiken om data weer te geven uit een database. Door de URL aan te passen kan een hacker code toevoegen, ofwel injecteren, waarmee hij de output van data kan aanpassen.
+				Door slim misbruik te maken van de syntax van iemands database kan je jezelf toegang geven tot gegevens, of jezelf zelfs zomaar inloggen op een account! Hiernaast kan je ook de query zó aanpassen, dat je erachter kan komen hoe de database is opgebouwd. Je stuurt dan bijvoorbeeld steeds een verzoek met een naam van een rij en kijkt of er een error terugkomt. Als dat niet zo is, bestaat de rij dus!
+				Naast het bekijken van gegevens, kan je ze ook veranderen. Door middel van een injectie kan je een gebruiker toevoegen en wacht of andere gegevens aanpassen. Ook hiermee kan je jezelf toegang verschaffen tot privédata.
+				Om jezelf hiertegen te beveiligen kun je als websiteigenaar een aantal dingen doen:
  				<ul>
-				<li>Je kan placeholders instellen zodat een query op een speciale manier moet worden ingevoerd.</li>
- 				<li>Je kan PHP-filters maken, die specifieke soorten invoer verwijderen uit databases.</li>
-				<li>Je kan foutmeldingen aanpassen, zodat ze minder informatie geven over de structuur ervan.</li>
+					<li>Je kan placeholders instellen zodat een query op een speciale manier moet worden ingevoerd.</li>
+					<li>Je kan PHP-filters maken, die specifieke soorten invoer verwijderen uit databases.</li>
+					<li>Je kan foutmeldingen aanpassen, zodat ze minder informatie geven over de structuur ervan.</li>
 				</ul>
-
 		</p>
 	</div>
 </body>
