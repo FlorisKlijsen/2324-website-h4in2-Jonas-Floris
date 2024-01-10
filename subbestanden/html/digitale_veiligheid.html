@@ -89,7 +89,7 @@
 				De eerste vereiste is vertrouwelijkheid. Dit bestaat uit twee delen: 
 				<ol type="1">
 					<li>
-						<b><span title="Aangeven wie je bent.">Authenticatie</span></b>: Drie mogelijkheden. Het is iets wat je:
+						<b class="hover-underline-animation"><span title="Aangeven wie je bent.">Authenticatie</span></b>: Drie mogelijkheden. Het is iets wat je:
 						<ol type="a">
 							<li>Hebt: een pasje of een sleutel</li>
 							<li>Weet: een code of je eerste huisdier</li>
@@ -97,17 +97,17 @@
 						</ol>
 						Hiermee geef je aan welke persoon je bent.
 					</li>
-					<li><span title="Bewijzen dat je die persoon bent."><b>Verificatie</b></span>: hiermee wordt gecheckt of je die persoon ook echt bent. Dit kan afhankelijk van de situatie veel vormen aannemen.</li>
+					<li><span title="Bewijzen dat je die persoon bent."><b class="hover-underline-animation">Verificatie</b></span>: hiermee wordt gecheckt of je die persoon ook echt bent. Dit kan afhankelijk van de situatie veel vormen aannemen.</li>
 				</ol>
-				Er is ook nog een extra maatregel om jezelf beter te beveiligen: <span title="Verificatie op twee verschillende manieren."><b>twee-factor authenticatie</b></span>. Hierbij moet de gebruiker twee vormen van authenticatie combineren, waardoor de kans kleiner wordt dat iemand anders zich als jou kan voordoen.<br>
-				Een verwant principe is <span title="Iedereen bekijken om er mensen uit te pikken."><b>screening</b></span>, waarbij mensen en/of voertuigen worden geïdentificeerd. Als ze op een zogenaamde <span title="Een lijst met mensen waar actie op ondernomen moet worden."><b>blacklist</b></span> staan, worden de autoriteiten gewaarschuwd. Screening wordt het breedst toegepast in China.
+				Er is ook nog een extra maatregel om jezelf beter te beveiligen: <span title="Verificatie op twee verschillende manieren."><b class="hover-underline-animation">twee-factor authenticatie</b></span>. Hierbij moet de gebruiker twee vormen van authenticatie combineren, waardoor de kans kleiner wordt dat iemand anders zich als jou kan voordoen.<br>
+				Een verwant principe is <span title="Iedereen bekijken om er mensen uit te pikken."><b class="hover-underline-animation">screening</b></span>, waarbij mensen en/of voertuigen worden geïdentificeerd. Als ze op een zogenaamde <span title="Een lijst met mensen waar actie op ondernomen moet worden."><b class="hover-underline-animation">blacklist</b></span> staan, worden de autoriteiten gewaarschuwd. Screening wordt het breedst toegepast in China.
 			<h3 id="integriteit">Integriteit</h3>		
-				Als je eenmaal in een systeem zit, moet bepaald worden welke <span title="Wat je binnen een systeem mag doen."><b>rechten</b></span> je daarbinnen hebt, afhankelijk van je <span title="je aangewezen positie, gekoppeld aan rechten."><b>rol</b></span>. Dit heet <span title="Bepalen wat iemand in een systeem mag doen."><b>autorisatie</b></span>. Met andere woorden, je controleert de integriteit. Dit komt op allerlei plaatsen voor, bijvoorbeeld op computers om bestandsmachtigingen op verschillende accounts te differentiëren.
+				Als je eenmaal in een systeem zit, moet bepaald worden welke <span title="Wat je binnen een systeem mag doen."><b class="hover-underline-animation">rechten</b></span> je daarbinnen hebt, afhankelijk van je <span title="je aangewezen positie, gekoppeld aan rechten."><b class="hover-underline-animation">rol</b></span>. Dit heet <span title="Bepalen wat iemand in een systeem mag doen."><b class="hover-underline-animation">autorisatie</b></span>. Met andere woorden, je controleert de integriteit. Dit komt op allerlei plaatsen voor, bijvoorbeeld op computers om bestandsmachtigingen op verschillende accounts te differentiëren.
 				Bij informatie is er ook sprake van integriteit. Om te kunnen spreken van integriteit bij informatie moet voldaan worden aan de volgende kenmerken:<br><br>
 				<table>
 					<tr>
-						<th><b>kenmerk</b></th>
-						<th><b>toelichting</b></th>
+						<th><b class="hover-underline-animation">kenmerk</b></th>
+						<th><b class="hover-underline-animation">toelichting</b></th>
 					</tr>
 					<tr>
 						<th>Volledigheid</th>
@@ -134,13 +134,13 @@
 						<th>Is de informatie gericht op degene die het moet bereiken?</th>
 					</tr>
 				</table><br>
-				Voldoen aan deze eisen is voor informatie belangrijk om bruikbaar te zijn. Om te controleren of het bestand dat je in handen hebt het origineel is, kan je een <span title="Een unieke string bepaald door elke bit van het bronbestand."><b>checksum</b></span> genereren en die vergelijken met degene die de ontwikkelaar heeft gegenereerd. Zodra er iets anders is, wordt de gehele checksum anders.<br>
+				Voldoen aan deze eisen is voor informatie belangrijk om bruikbaar te zijn. Om te controleren of het bestand dat je in handen hebt het origineel is, kan je een <span title="Een unieke string bepaald door elke bit van het bronbestand."><b class="hover-underline-animation">checksum</b></span> genereren en die vergelijken met degene die de ontwikkelaar heeft gegenereerd. Zodra er iets anders is, wordt de gehele checksum anders.<br>
 				Een vergelijkbare techniek wordt gebruikt voor IBAN-nummers. Als je er een typefout in maakt, wordt dat opgemerkt en is de code ongeldig.
 			<h3 id="beschikbaarheid">Beschikbaarheid</h3>		
-				Tot slot moet de <span title="Of je bij de informatie kunt wanneer dat nodig is."><b>beschikbaarheid</b></span> van de informatie goed zijn. Dit betekent dat de informatie niet verloren mag gaan. Een manier om dit te bereiken is het maken van back-ups via het 3-2-1-systeem: hierbij sla je drie kopieën van de informatie op, waarbij er twee methodes van opslag worden gebruikt en er één kopie op een andere locatie is.<br>
-				Sommige bestanden die verstuurd moeten worden, moeten niet voor iedereen leesbaar zijn. Hier zorgt <span title="Het onleesbaar maken van bestand, tenzij je de sleutel hebt."><b>encryptie</b></span> voor. Alleen de ontvanger en de zender hebben de sleutel die het bericht op de servers kan terugvertalen vanuit onleesbare karakters.<br>
-				Als je gevoelige data zoals wachtwoorden op wil slaan, moet je gebruikmaken van <span title="Het genereren van een unieke code bij een stuk data, dat niet meer terug kan naar het origineel."><b>hashing</b></span>: dit is een manier om ‘gehashte’ wachtwoorden zó op een server te zetten, dat de hash niet meer terug vertaald kan worden naar het origineel. Om toch te kunnen checken of een gebruiker het wachtwoord goed heeft, wordt de invoer óók gehasht, waarna hij vergeleken wordt met het origineel.<br>
-				Om de bereikbaarheid van informatie doelgericht te verslechteren kunnen hackers een <span title="Heel veel aanvragen naar een server sturen, met het doel hem te vertragen of te crashen."><b>DDoS-aanval (Distributed Denial of Service)</b></span> doen, waarbij je zoveel aanvragen naar een server stuurt dat deze crasht en dus helemaal niet meer reageert. Als dit gebeurt bij een website gaat de website offline. In meer ernstige gevallen zou je het openbaar vervoer ermee kunnen ontregelen.
+				Tot slot moet de <span title="Of je bij de informatie kunt wanneer dat nodig is."><b class="hover-underline-animation">beschikbaarheid</b></span> van de informatie goed zijn. Dit betekent dat de informatie niet verloren mag gaan. Een manier om dit te bereiken is het maken van back-ups via het 3-2-1-systeem: hierbij sla je drie kopieën van de informatie op, waarbij er twee methodes van opslag worden gebruikt en er één kopie op een andere locatie is.<br>
+				Sommige bestanden die verstuurd moeten worden, moeten niet voor iedereen leesbaar zijn. Hier zorgt <span title="Het onleesbaar maken van bestand, tenzij je de sleutel hebt."><b class="hover-underline-animation">encryptie</b></span> voor. Alleen de ontvanger en de zender hebben de sleutel die het bericht op de servers kan terugvertalen vanuit onleesbare karakters.<br>
+				Als je gevoelige data zoals wachtwoorden op wil slaan, moet je gebruikmaken van <span title="Het genereren van een unieke code bij een stuk data, dat niet meer terug kan naar het origineel."><b class="hover-underline-animation">hashing</b></span>: dit is een manier om ‘gehashte’ wachtwoorden zó op een server te zetten, dat de hash niet meer terug vertaald kan worden naar het origineel. Om toch te kunnen checken of een gebruiker het wachtwoord goed heeft, wordt de invoer óók gehasht, waarna hij vergeleken wordt met het origineel.<br>
+				Om de bereikbaarheid van informatie doelgericht te verslechteren kunnen hackers een <span title="Heel veel aanvragen naar een server sturen, met het doel hem te vertragen of te crashen."><b class="hover-underline-animation">DDoS-aanval (Distributed Denial of Service)</b></span> doen, waarbij je zoveel aanvragen naar een server stuurt dat deze crasht en dus helemaal niet meer reageert. Als dit gebeurt bij een website gaat de website offline. In meer ernstige gevallen zou je het openbaar vervoer ermee kunnen ontregelen.
 		</p>
 	</div>
 </body>
