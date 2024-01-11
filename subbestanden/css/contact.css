@@ -184,9 +184,9 @@ display: none;
 
 footer{
  width:101.6%;
- height:20%;
+ height:10%;
  background-color:black;
- margin:10% 0% 0% -1%;
+ margin:20% 0% 0% -1%;
  float:left;
 }
 
@@ -222,17 +222,21 @@ footer{
   background-color:#000000;
 }
 
-.contact-Jonas,.contact-Floris,.contact-Jonas a,.contact-Floris a{
+.contact-Jonas,.contact-Floris{
   color:#ffffff;
-  background-color:purple;
-  text-decoration:none;
+  background-color:transparent;
   width:250px;
   float:left;
   margin:0% 0% 0% 5%;
 }
 
+.contact-Jonas a,.contact-Floris a{
+  color:#ffffff;
+  text-decoration:none;
+}
+
 #contact_h1{
-  color:purple;
+  color:#ffffff;
   font-size:300%;
   text-align:center;
   margin:-2% 100% 2% 40%;
@@ -249,3 +253,9 @@ iframe{
   background-color:transparent;
 }
 
+body{
+  background-image: url(/images/cubic.jpg);
+  height:800px;
+  width:98.8%;
+  background-size:cover;
+}

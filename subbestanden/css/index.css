@@ -69,7 +69,7 @@ h1{
    text-align:left;
    font-size:90%;
    padding-top: 2%;
-   box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0) , 0 4px 8px 0 rgba(0, 0, 0, 0.2) , 0 4px 8px 0 rgba(0, 0, 0, 0.2) , 0 4px 8px 0 rgba(0, 0, 0, 0.2) ;
+   box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0) , 0 4px 8px 0 rgba(0, 0, 0, 0.2) , 0 4px 8px 0 rgba(0, 0, 0, 0.2) , 0 4px 8px 0 rgba(0, 0, 0, 0.2);
  }
 
  .home .dropdown-content{
@@ -213,7 +213,7 @@ footer{
 }
 
 body{
-  background-image: linear-gradient( 180deg, #ffffff 0%, #000000 50%, #ffffff 100% );
+  background-color:#ffffff;
   height:1600px;
 }
 
@@ -223,3 +223,21 @@ iframe{
   height:38px;
   background-color:transparent;
 }
+
+.homediv1{
+  width:94%;
+  margin:2% 2% 0% 2%;
+  height:700px;
+  background: url(/images/cybersecurity.jpg);
+  background-repeat:repeat;
+  border-radius:20px;
+  background-color: purple;
+  float:left;
+  padding:2% 0% 0% 2%;
+}
+
+.homediv1 h2{
+  color:#ffffff;
+  font-size:xx-large;
+}
+

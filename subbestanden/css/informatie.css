@@ -51,7 +51,7 @@ header h1{
 
 
 .klok{
-  float:right;;
+  float:right;
   margin: 1% -63% 0% 0%;
 }
 
@@ -263,4 +263,11 @@ h2,h3{
 
 html{
   scroll-behavior:smooth;
+}
+
+iframe{
+  border:0;
+  width:104px;
+  height:38px;
+  background-color:transparent;
 }
