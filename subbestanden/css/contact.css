@@ -212,23 +212,30 @@ footer{
  text-align:right;
 }
 
-.dig_veil_tekst,.dig_veil_tekst a{
+.dig_veil_tekst{
   width:90%;
-  height:fit-content;
+  height:250px;
   float:right;
-  color:#ffffff;
-  background-color:#000000;
   padding:3%;
-  border-radius:4%;
+  border-radius:20px;
   margin:5% 2.5% 0% 2.5%;
-  text-decoration:none;
+  background-color:#000000;
 }
 
-.dig_veil_tekst p h1{
+.contact-Jonas,.contact-Floris,.contact-Jonas a,.contact-Floris a{
   color:#ffffff;
+  background-color:purple;
+  text-decoration:none;
+  width:250px;
+  float:left;
+  margin:0% 0% 0% 5%;
+}
+
+#contact_h1{
+  color:purple;
   font-size:300%;
   text-align:center;
-  margin:-2% 0% 0% 0%;
+  margin:-2% 100% 2% 40%;
 }
 
 h2,h3{
