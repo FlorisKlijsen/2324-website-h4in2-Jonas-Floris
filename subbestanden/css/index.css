@@ -184,7 +184,7 @@ h1{
 
 footer{
   width:101.6%;
-  height:20%;
+  height:10%;
   background-color:black;
   margin:10% 0% 0% -1%;
   float:left;
@@ -214,7 +214,7 @@ footer{
 
 body{
   background-color:#ffffff;
-  height:1600px;
+  height:800px;
 }
 
 iframe{
@@ -227,13 +227,14 @@ iframe{
 .homediv1{
   width:94%;
   margin:2% 2% 0% 2%;
-  height:700px;
+  height:800px;
   background: url(/images/cybersecurity.jpg);
   background-repeat:repeat;
   border-radius:20px;
   background-color: purple;
   float:left;
   padding:2% 0% 0% 2%;
+  z-index:5;
 }
 
 .homediv1 h2{
@@ -241,3 +242,53 @@ iframe{
   font-size:xx-large;
 }
 
+.homediv-digitale_veiligheid, .homediv-aanvallers_en_verdedigers, .homediv-bedreigingen, .homediv-maatregelen, .homediv-SQL-injecties{
+  height:75px;
+  width:400px;
+  float:left;
+  z-index:1;
+  margin:25px 0px 0px 25px;
+  border-radius:20px;
+  padding:10px 0px 0px 10px;
+  font-size:x-large;
+  font-weight:bolder;
+  transition: width .5s;
+}
+
+.homediv-digitale_veiligheid:hover, .homediv-aanvallers_en_verdedigers:hover, .homediv-bedreigingen:hover, .homediv-maatregelen:hover, .homediv-SQL-injecties:hover{
+  width:450px;
+}
+
+.homediv-digitale_veiligheid{
+  background-image:url(/images/Digitale_veiligheid.webp);
+  color:#ffffff;
+}
+
+.homediv-bedreigingen{
+  background-image:url(/images/Bedreigingen.jpg);
+  color:#000000;
+}
+
+.homediv-aanvallers_en_verdedigers{
+  background-image:url(/images/Aanvallers_en_verdedigers.avif);
+  color:#ffffff;
+}
+
+.homediv-maatregelen{
+  background-image:url(/images/Maatregelen.webp);
+  color:#ffffff;
+}
+
+.homediv-SQL-injecties{
+  background-image:url(/images/SQL-injecties.webp);
+  color:#000000;
+}
+
+.homewrapper{
+  width:500px;
+  height:550px;
+  float:left;
+  background-color:transparent;
+  z-index:2;
+  padding-top:-20px;
+}
