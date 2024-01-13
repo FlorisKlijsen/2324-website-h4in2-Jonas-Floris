@@ -128,7 +128,7 @@ display: none;
   left: 0;
   background-color: currentColor;
   transform-origin: bottom left;
-  transition: transform 0.35s ease-out;
+  transition: transform 1s ease-out;
 }
 
 .hover-underline-animation:hover::after {
