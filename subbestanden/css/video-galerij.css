@@ -14,7 +14,6 @@
     height:121px;
     float:left;
     margin:0%;
-    /*background-image: url("/images/cubic.jpg");*/
   
   }
   
@@ -88,10 +87,10 @@
   }
   
   .videos .dropdown-content{
-   width:70%;
+   width:130%;
    margin: 16px 0% 0% 12%;
   }
-  
+
   .contact .dropdown-content{
    width:75%;
    margin: 16px 0% 0% 10%;
@@ -230,18 +229,21 @@
   }
   
   body{
-    background-image: url(/images/cubic.jpg);
+    background-image: url(/subbestanden/images/cubic.jpg);
     height:800px;
     width:98.8%;
     background-size:cover;
   }
 
-  .dig_veil_tekst iframe{
+  .dig_veil_tekst iframe,.dig_veil_tekst img{
     width:1220px;
     height:630px;
     border:0;
+    margin-top:1%;
+    margin-bottom:0%;
   }
 
   .dig_veil_tekst h1,.dig_veil_tekst h2{
     color:#ffffff;
+    margin:0% 0% 0% 2%;
   }

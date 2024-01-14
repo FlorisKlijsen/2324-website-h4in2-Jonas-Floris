@@ -14,8 +14,6 @@ header{
    height:121px;
    float:left;
    margin:0%;
-   /*background-image: url("/images/cubic.jpg");*/
-
 }
 
 h1{
@@ -228,7 +226,7 @@ iframe{
   width:94%;
   margin:2% 2% 0% 2%;
   height:800px;
-  background: url(/images/cybersecurity.jpg);
+  background: url(/subbestanden/images/cybersecurity.jpg);
   background-repeat:repeat;
   border-radius:20px;
   background-color: purple;
@@ -260,27 +258,27 @@ iframe{
 }
 
 .homediv-digitale_veiligheid{
-  background-image:url(/images/Digitale_veiligheid.webp);
+  background-image:url(/subbestanden/images/Digitale_veiligheid.webp);
   color:#ffffff;
 }
 
 .homediv-bedreigingen{
-  background-image:url(/images/Bedreigingen.jpg);
+  background-image:url(/subbestanden/images/Bedreigingen.jpg);
   color:#000000;
 }
 
 .homediv-aanvallers_en_verdedigers{
-  background-image:url(/images/Aanvallers_en_verdedigers.avif);
+  background-image:url(/subbestanden/images/Aanvallers_en_verdedigers.avif);
   color:#ffffff;
 }
 
 .homediv-maatregelen{
-  background-image:url(/images/Maatregelen.webp);
+  background-image:url(/subbestanden/images/Maatregelen.webp);
   color:#ffffff;
 }
 
 .homediv-SQL-injecties{
-  background-image:url(/images/SQL-injecties.webp);
+  background-image:url(/subbestanden/images/SQL-injecties.webp);
   color:#000000;
 }
 

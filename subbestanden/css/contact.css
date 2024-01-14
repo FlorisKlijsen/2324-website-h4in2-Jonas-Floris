@@ -14,8 +14,6 @@ header{
   height:121px;
   float:left;
   margin:0%;
-  /*background-image: url("/images/cubic.jpg");*/
-
 }
 
 h1{
@@ -88,8 +86,8 @@ h1{
 }
 
 .videos .dropdown-content{
- width:70%;
- margin: 16px 0% 0% 12%;
+  width:130%;
+  margin: 16px 0% 0% 12%;
 }
 
 .contact .dropdown-content{
@@ -254,7 +252,7 @@ iframe{
 }
 
 body{
-  background-image: url(/images/cubic.jpg);
+  background-image: url(/subbestanden/images/cubic.jpg);
   height:800px;
   width:98.8%;
   background-size:cover;
