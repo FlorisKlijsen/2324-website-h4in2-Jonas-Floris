@@ -1,3 +1,30 @@
+/*――――――――――――――――――――――――――――――――――    ALGEMEEN    ――――――――――――――――――――――――――――――――――――――――――――――*/
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+}
+
+.hover-underline-animation::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 7%;
+  bottom: 0;
+  left: 0;
+  background-color: currentColor;
+  transform-origin: bottom left;
+  transition: transform 1s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+
+/*――――――――――――――――――――――――――――――――――    HEADER      ――――――――――――――――――――――――――――――――――――――――――――――*/
 
 #wrapper{
   width:101.6%;
@@ -6,7 +33,6 @@
   float:left;
   margin:-10px 0% 0% -1%;
 }
-
 
 header{
   background-color:black;
@@ -38,7 +64,6 @@ h1{
   text-align:center;
   color:#ffffff;
   text-decoration:none;
-
 }
 
 .home:hover, .veiligheid:hover, .galerij:hover, .videos:hover, .contact:hover{
@@ -46,10 +71,16 @@ h1{
   cursor:pointer;
 }
 
-
 .klok{
   float:right;;
   margin: 1% -63% 0% 0%;
+}
+
+iframe{
+  border:0;
+  width:104px;
+  height:38px;
+  background-color:transparent;
 }
 
 .dropdown {
@@ -106,109 +137,48 @@ display: none;
   color:#000000;
 }
 
-  .dropdown:hover .dropdown-content, .dropdown:hover .driehoek {
+.dropdown:hover .dropdown-content, .dropdown:hover .driehoek {
   display: block;
 }
 
-.hover-underline-animation {
-  display: inline-block;
-  position: relative;
-}
-
-.hover-underline-animation::after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 7%;
-  bottom: 0;
-  left: 0;
-  background-color: currentColor;
-  transform-origin: bottom left;
-  transition: transform 0.35s ease-out;
-}
-
-.hover-underline-animation:hover::after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
-}
-
-
 .driehoek {
- width: 0;
- height: 0;
- border-left: 20px solid transparent;
- border-right: 20px solid transparent;
- border-bottom: 20px solid #ffffff;
-}
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 20px solid #ffffff;
+ }
+ 
+ .home .driehoek{
+  margin:2% 0% 0% 28%;
+ }
+ 
+ .veiligheid .driehoek{
+  margin:2% 0% 0% 15%;
+ }
+ 
+ .galerij .driehoek{
+  margin:2% 0% 0% 22%;
+ }
+ 
+ .videos .driehoek{
+  margin:2% 0% 0% 22%;
+ }
+ 
+ .contact .driehoek{
+  margin:2% 0% 0% 20%;
+ }
+ 
+ .iframeblocker{
+  background-color:transparent;
+  width:8%;
+  height:31%;
+  float:right;
+  margin: 1% -63% 0% 0%;
+ }
+ 
 
-.home .driehoek{
- margin:2% 0% 0% 28%;
-}
-
-.veiligheid .driehoek{
- margin:2% 0% 0% 15%;
-}
-
-.galerij .driehoek{
- margin:2% 0% 0% 22%;
-}
-
-.videos .driehoek{
- margin:2% 0% 0% 22%;
-}
-
-.contact .driehoek{
- margin:2% 0% 0% 20%;
-}
-
-.iframeblocker{
- background-color:transparent;
- width:8%;
- height:31%;
- float:right;
- margin: 1% -63% 0% 0%;
-}
-
-.bodyimage, .bodyimage2{
- width:100%;
- height:auto;
-}
-
-.bodyimage2{
- margin-top:-1%;
-}
-
-
-footer{
- width:101.6%;
- height:10%;
- background-color:black;
- margin:20% 0% 0% -1%;
- float:left;
-}
-
-.footerleft{
- float:left;
- height: 100%;
- width: 40%;
- background-color:transparent;
- padding:0% 0% 0% 3%;
-}
-
-.footerleft a, .footerleft p, .footerright a, .footerright p {
- color:white;
- text-decoration: none;
-}
-
-.footerright{
- float:right;
- height:100%;
- width:40%;
- background-color:transparent;
- padding:0% 3% 0% 0%;
- text-align:right;
-}
+/*――――――――――――――――――――――――――――――――――    BODY        ――――――――――――――――――――――――――――――――――――――――――――――*/
 
 .dig_veil_tekst{
   width:90%;
@@ -244,16 +214,42 @@ h2,h3{
   margin-bottom:0%;
 }
 
-iframe{
-  border:0;
-  width:104px;
-  height:38px;
-  background-color:transparent;
-}
-
 body{
   background-image: url(/subbestanden/images/cubic.jpg);
   height:800px;
   width:98.8%;
   background-size:cover;
 }
+
+
+/*――――――――――――――――――――――――――――――――――    FOOTER      ――――――――――――――――――――――――――――――――――――――――――――――*/
+
+footer{
+  width:101.6%;
+  height:10%;
+  background-color:black;
+  margin:20% 0% 0% -1%;
+  float:left;
+ }
+ 
+ .footerleft{
+  float:left;
+  height: 100%;
+  width: 40%;
+  background-color:transparent;
+  padding:0% 0% 0% 3%;
+ }
+ 
+ .footerleft a, .footerleft p, .footerright a, .footerright p {
+  color:white;
+  text-decoration: none;
+ }
+ 
+ .footerright{
+  float:right;
+  height:100%;
+  width:40%;
+  background-color:transparent;
+  padding:0% 3% 0% 0%;
+  text-align:right;
+ }

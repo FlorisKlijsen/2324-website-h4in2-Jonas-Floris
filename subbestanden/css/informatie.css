@@ -1,3 +1,34 @@
+/*――――――――――――――――――――――――――――――――――    ALGEMEEN    ――――――――――――――――――――――――――――――――――――――――――――――*/
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+}
+
+.hover-underline-animation::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 7%;
+  bottom: 0;
+  left: 0;
+  background-color: currentColor;
+  transform-origin: bottom left;
+  transition: transform 1s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+
+/*――――――――――――――――――――――――――――――――――    HEADER      ――――――――――――――――――――――――――――――――――――――――――――――*/
 
 #wrapper{
   width:101.6%;
@@ -49,10 +80,16 @@ header h1{
   cursor:pointer;
 }
 
-
 .klok{
   float:right;
   margin: 1% -63% 0% 0%;
+}
+
+iframe{
+  border:0;
+  width:104px;
+  height:38px;
+  background-color:transparent;
 }
 
 .dropdown {
@@ -109,165 +146,144 @@ display: none;
   color:#000000;
 }
 
-  .dropdown:hover .dropdown-content, .dropdown:hover .driehoek {
+.dropdown:hover .dropdown-content, .dropdown:hover .driehoek {
   display: block;
 }
 
-.hover-underline-animation {
-  display: inline-block;
-  position: relative;
-}
-
-.hover-underline-animation::after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 7%;
-  bottom: 0;
-  left: 0;
-  background-color: currentColor;
-  transform-origin: bottom left;
-  transition: transform 1s ease-out;
-}
-
-.hover-underline-animation:hover::after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
-}
-
-
 .driehoek {
- width: 0;
- height: 0;
- border-left: 20px solid transparent;
- border-right: 20px solid transparent;
- border-bottom: 20px solid #ffffff;
-}
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 20px solid #ffffff;
+ }
+ 
+ .home .driehoek{
+  margin:2% 0% 0% 28%;
+ }
+ 
+ .veiligheid .driehoek{
+  margin:2% 0% 0% 15%;
+ }
+ 
+ .galerij .driehoek{
+  margin:2% 0% 0% 22%;
+ }
+ 
+ .videos .driehoek{
+  margin:2% 0% 0% 22%;
+ }
+ 
+ .contact .driehoek{
+  margin:2% 0% 0% 20%;
+ }
+ 
+ .iframeblocker{
+  background-color:transparent;
+  width:8%;
+  height:31%;
+  float:right;
+  margin: 1% -63% 0% 0%;
+ }
+ 
 
-.home .driehoek{
- margin:2% 0% 0% 28%;
-}
-
-.veiligheid .driehoek{
- margin:2% 0% 0% 15%;
-}
-
-.galerij .driehoek{
- margin:2% 0% 0% 22%;
-}
-
-.videos .driehoek{
- margin:2% 0% 0% 22%;
-}
-
-.contact .driehoek{
- margin:2% 0% 0% 20%;
-}
-
-.iframeblocker{
- background-color:transparent;
- width:8%;
- height:31%;
- float:right;
- margin: 1% -63% 0% 0%;
-}
-
-footer{
- width:101.6%;
- height:10%;
- background-color:black;
- margin:10% 0% 0% -1%;
- float:left;
-}
-
-.footerleft{
- float:left;
- height: 100%;
- width: 40%;
- background-color:transparent;
- padding:0% 0% 0% 3%;
-}
-
-.footerleft a, .footerleft p, .footerright a, .footerright p {
- color:white;
- text-decoration: none;
-}
-
-.footerright{
- float:right;
- height:100%;
- width:40%;
- background-color:transparent;
- padding:0% 3% 0% 0%;
- text-align:right;
-}
+/*――――――――――――――――――――――――――――――――――    BODY        ――――――――――――――――――――――――――――――――――――――――――――――*/
 
 body{
- background-image: url(/subbestanden/images/cubic.jpg);
- height:800px;
- width:98.8%;
- background-size:cover;
+  background-image: url(/subbestanden/images/cubic.jpg);
+  height:800px;
+  width:98.8%;
+  background-size:cover;
+ }
+ 
+ .dig_veil_tekst{
+   width:70%;
+   height:fit-content;
+   float:right;
+   color:#ffffff;
+   background-color:#000000;
+   padding:3%;
+   border-radius:20px;
+   margin:5% 2% 0% 2%;
+ }
+ 
+ .dig_veil_h1{
+   color:#ffffff;
+   font-size:300%;
+   text-align:center;
+   margin:-2% 0% 0% 0%;
+ }
+ 
+ .navigatiebalk{
+   background-color:#000000;
+   height:fit-content;
+   width:17.5%;
+   float:left;
+   border-radius:20px;
+   margin:2% 2% 0% 2%;
+   position:fixed;
+   top:24.5%;  
+ }
+ 
+ .navigatiebalk,.navigatiebalk a{
+   color:#ffffff;
+   text-decoration:none;
+ }
+ 
+ table,tr,th{
+   border:1px solid white;
+   border-collapse:collapse;
+   font-weight:normal;
+   background-color:#222222;
+   width:fit-content;
+ }
+ 
+ h2,h3{
+   margin-bottom:0%
+ }
+ 
+ .navigatiebalk h3{
+   margin:10% 0% 0% 0%;
+   text-align:center;
+ }
+
+ ol{
+  list-style-type:decimal;
 }
 
-.dig_veil_tekst{
-  width:70%;
-  height:fit-content;
-  float:right;
-  color:#ffffff;
-  background-color:#000000;
-  padding:3%;
-  border-radius:20px;
-  margin:5% 2% 0% 2%;
+ul{
+  list-style-type:square;
 }
+ 
 
-.dig_veil_h1{
-  color:#ffffff;
-  font-size:300%;
-  text-align:center;
-  margin:-2% 0% 0% 0%;
-}
+/*――――――――――――――――――――――――――――――――――    FOOTER      ――――――――――――――――――――――――――――――――――――――――――――――*/
 
-.navigatiebalk{
-  background-color:#000000;
-  height:fit-content;
-  width:17.5%;
+footer{
+  width:101.6%;
+  height:10%;
+  background-color:black;
+  margin:10% 0% 0% -1%;
   float:left;
-  border-radius:20px;
-  margin:2% 2% 0% 2%;
-  position:fixed;
-  top:24.5%;  
-}
-
-.navigatiebalk,.navigatiebalk a{
-  color:#ffffff;
-  text-decoration:none;
-}
-
-table,tr,th{
-  border:1px solid white;
-  border-collapse:collapse;
-  font-weight:normal;
-  background-color:#222222;
-  width:fit-content;
-}
-
-h2,h3{
-  margin-bottom:0%
-}
-
-.navigatiebalk h3{
-  margin:10% 0% 0% 0%;
-  text-align:center;
-}
-
-html{
-  scroll-behavior:smooth;
-}
-
-iframe{
-  border:0;
-  width:104px;
-  height:38px;
+ }
+ 
+ .footerleft{
+  float:left;
+  height: 100%;
+  width: 40%;
   background-color:transparent;
-}
+  padding:0% 0% 0% 3%;
+ }
+ 
+.footerleft a, .footerleft p, .footerright a, .footerright p {
+  color:white;
+  text-decoration: none;
+ }
+ 
+.footerright{
+  float:right;
+  height:100%;
+  width:40%;
+  background-color:transparent;
+  padding:0% 3% 0% 0%;
+  text-align:right;
+ }

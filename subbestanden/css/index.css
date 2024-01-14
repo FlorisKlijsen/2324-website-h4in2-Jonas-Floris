@@ -1,19 +1,45 @@
+/*――――――――――――――――――――――――――――――――――    ALGEMEEN    ――――――――――――――――――――――――――――――――――――――――――――――*/
 
-#wrapper{
-   width:101.6%;
-   height:121px;
-   background-color:#dddddd;
-   float:left;
-   margin:-10px 0% 0% -1%;
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+}
+
+.hover-underline-animation::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 7%;
+  bottom: 0;
+  left: 0;
+  background-color: currentColor;
+  transform-origin: bottom left;
+  transition: transform 1s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 
+/*――――――――――――――――――――――――――――――――――    HEADER      ――――――――――――――――――――――――――――――――――――――――――――――*/
+
+#wrapper{
+  width:101.6%;
+  height:121px;
+  background-color:#dddddd;
+  float:left;
+  margin:-10px 0% 0% -1%;
+}
+
 header{
-   background-color:black;
-   width:100%;
-   height:121px;
-   float:left;
-   margin:0%;
+  background-color:black;
+  width:100%;
+  height:121px;
+  float:left;
+  margin:0%;
 }
 
 h1{
@@ -25,116 +51,97 @@ h1{
 }
 
 .home, .veiligheid, .galerij, .videos, .contact {
-   margin-left: 0%;
-   margin-right:0%;
-   float:right;
-   height:40%;
-   width:13%;
-   background-color: transparent;
-   margin-top: 72px;
-   font-family:"Times New Roman";
-   font-weight:bolder;
-   font-size:175%;
-   text-align:center;
-   color:#ffffff;
-   text-decoration:none;
-
+  margin-left: 0%;
+  margin-right:0%;
+  float:right;
+  height:40%;
+  width:13%;
+  background-color: transparent;
+  margin-top: 72px;
+  font-family:"Times New Roman";
+  font-weight:bolder;
+  font-size:175%;
+  text-align:center;
+  color:#ffffff;
+  text-decoration:none;
 }
 
 .home:hover, .veiligheid:hover, .galerij:hover, .videos:hover, .contact:hover{
-   background-color:transparent;
-   cursor:pointer;
+  background-color:transparent;
+  cursor:pointer;
 }
 
-
 .klok{
-   float:right;;
-   margin: 1% -63% 0% 0%;
+  float:right;;
+  margin: 1% -63% 0% 0%;
+}
+
+iframe{
+  border:0;
+  width:104px;
+  height:38px;
+  background-color:transparent;
 }
 
 .dropdown {
-   position: relative;
-   display: inline-block;
- }
- 
- .dropdown-content {
-   display: none;
-   position: absolute;
-   background-color: #ffffff;
-   width: 90%;
-   padding: 1% 1% 3% 4%;
-   z-index: 1;
-   text-align:left;
-   font-size:90%;
-   padding-top: 2%;
-   box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0) , 0 4px 8px 0 rgba(0, 0, 0, 0.2) , 0 4px 8px 0 rgba(0, 0, 0, 0.2) , 0 4px 8px 0 rgba(0, 0, 0, 0.2);
- }
-
- .home .dropdown-content{
-  width: 75%;
-  margin: 16px 0% 0% 22%;
- }
-
- .veiligheid .dropdown-content{
-  width:175%;
-  margin: 16px 0% 0% 10%;
- }
-
- .galerij .dropdown-content{
-  width: 70%;
-  margin: 16px 0% 0% 12%;
- }
-
- .videos .dropdown-content{
-  width:130%;
-  margin: 16px 0% 0% 12%;
- }
-
- .contact .dropdown-content{
-  width:75%;
-  margin: 16px 0% 0% 10%;
- }
-
-.driehoek{
- display: none;
-  position: absolute;
-  z-index: 1;
+  position: relative;
+  display: inline-block;
 }
 
- .dropdown-content a {
-   text-decoration: none;
-   color:#000000;
- }
- 
-   .dropdown:hover .dropdown-content, .dropdown:hover .driehoek {
-   display: block;
- }
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  width: 90%;
+  padding: 1% 1% 3% 4%;
+  z-index: 1;
+  text-align:left;
+  font-size:90%;
+  padding-top: 2%;
+  box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0) , 0 4px 8px 0 rgba(0, 0, 0, 0.2) , 0 4px 8px 0 rgba(0, 0, 0, 0.2) , 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
 
- .hover-underline-animation {
-   display: inline-block;
-   position: relative;
- }
- 
- .hover-underline-animation::after {
-   content: '';
-   position: absolute;
-   width: 100%;
-   transform: scaleX(0);
-   height: 7%;
-   bottom: 0;
-   left: 0;
-   background-color: currentColor;
-   transform-origin: bottom left;
-   transition: transform 0.35s ease-out;
- }
- 
- .hover-underline-animation:hover::after {
-   transform: scaleX(1);
-   transform-origin: bottom left;
- }
+.home .dropdown-content{
+ width: 75%;
+ margin: 16px 0% 0% 22%;
+}
 
- 
- .driehoek {
+.veiligheid .dropdown-content{
+ width:175%;
+ margin: 16px 0% 0% 10%;
+}
+
+.galerij .dropdown-content{
+ width: 70%;
+ margin: 16px 0% 0% 12%;
+}
+
+.videos .dropdown-content{
+ width:130%;
+ margin: 16px 0% 0% 12%;
+}
+
+.contact .dropdown-content{
+ width:75%;
+ margin: 16px 0% 0% 10%;
+}
+
+.driehoek{
+display: none;
+ position: absolute;
+ z-index: 1;
+}
+
+.dropdown-content a {
+  text-decoration: none;
+  color:#000000;
+}
+
+  .dropdown:hover .dropdown-content, .dropdown:hover .driehoek {
+  display: block;
+}
+
+.driehoek {
 	width: 0;
 	height: 0;
 	border-left: 20px solid transparent;
@@ -170,58 +177,13 @@ h1{
   margin: 1% -63% 0% 0%;
 }
 
-.bodyimage, .bodyimage2{
-  width:100%;
-  height:auto;
-}
 
-.bodyimage2{
-  margin-top:-1%;
-}
-
-
-footer{
-  width:101.6%;
-  height:10%;
-  background-color:black;
-  margin:10% 0% 0% -1%;
-  float:left;
-}
-
-.footerleft{
-  float:left;
-  height: 100%;
-  width: 40%;
-  background-color:transparent;
-  padding:0% 0% 0% 3%;
-}
-
-.footerleft a, .footerleft p, .footerright a, .footerright p {
-  color:white;
-  text-decoration: none;
-}
-
-.footerright{
-  float:right;
-  height:100%;
-  width:40%;
-  background-color:transparent;
-  padding:0% 3% 0% 0%;
-  text-align:right;
-}
+/*――――――――――――――――――――――――――――――――――    BODY        ――――――――――――――――――――――――――――――――――――――――――――――*/
 
 body{
   background-color:#ffffff;
   height:800px;
 }
-
-iframe{
-  border:0;
-  width:104px;
-  height:38px;
-  background-color:transparent;
-}
-
 .homediv1{
   width:94%;
   margin:2% 2% 0% 2%;
@@ -288,5 +250,37 @@ iframe{
   float:left;
   background-color:transparent;
   z-index:2;
-  padding-top:-20px;
+}
+
+
+/*――――――――――――――――――――――――――――――――――    FOOTER      ――――――――――――――――――――――――――――――――――――――――――――――*/
+
+footer{
+  width:101.6%;
+  height:10%;
+  background-color:black;
+  margin:10% 0% 0% -1%;
+  float:left;
+}
+
+.footerleft{
+  float:left;
+  height: 100%;
+  width: 40%;
+  background-color:transparent;
+  padding:0% 0% 0% 3%;
+}
+
+.footerleft a, .footerleft p, .footerright a, .footerright p {
+  color:white;
+  text-decoration: none;
+}
+
+.footerright{
+  float:right;
+  height:100%;
+  width:40%;
+  background-color:transparent;
+  padding:0% 3% 0% 0%;
+  text-align:right;
 }
