@@ -40,7 +40,7 @@ html{
 
 
 header{
-  background-color:black;
+  background-color:#111612;
   width:100%;
   height:121px;
   float:left;
@@ -201,7 +201,7 @@ body{
    height:fit-content;
    float:right;
    color:#ffffff;
-   background-color:#000000;
+   background-color:#3b6243;
    padding:3%;
    border-radius:20px;
    margin:5% 2% 0% 2%;
@@ -215,7 +215,7 @@ body{
  }
  
  .navigatiebalk{
-   background-color:#000000;
+   background-color:#a9c6af;
    height:fit-content;
    width:17.5%;
    float:left;
@@ -234,7 +234,7 @@ body{
    border:1px solid white;
    border-collapse:collapse;
    font-weight:normal;
-   background-color:#222222;
+   background-color: #65ad73;
    width:fit-content;
  }
  
@@ -261,7 +261,7 @@ ul{
 footer{
   width:101.6%;
   height:10%;
-  background-color:black;
+  background-color:#111612;
   margin:10% 0% 0% -1%;
   float:left;
  }

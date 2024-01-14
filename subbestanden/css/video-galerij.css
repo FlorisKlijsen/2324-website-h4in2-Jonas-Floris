@@ -35,7 +35,7 @@
 }
 
 header{
-  background-color:black;
+  background-color:#111612;
   width:100%;
   height:121px;
   float:left;
@@ -184,10 +184,11 @@ h1{
   width:90%;
   height:fit-content;
   float:right;
+  color:#ffffff;
   padding:3%;
   border-radius:20px;
   margin:2% 2.5% 0% 2.5%;
-  background-color:#000000;
+  background-color:#3b6243;
 }
 
 body{
@@ -216,7 +217,7 @@ body{
 footer{
   width:101.6%;
   height:10%;
-  background-color:black;
+  background-color:#111612;
   margin:20% 0% 0% -1%;
   float:left;
  }
